@@ -6,7 +6,7 @@ The application validates and masks sensitive payment data on the client, genera
 
 ## Links
 
-- Live demo: https://axipays-payment-gateway.vercel.app/checkout
+- Live demo: https://axipays-payment-gateway.vercel.app
 - GitHub repository: https://github.com/SagarPradhan613/axipays-payment-gateway
 
 ## Tech Stack
