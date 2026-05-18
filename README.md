@@ -6,8 +6,9 @@ The application validates and masks sensitive payment data on the client, genera
 
 ## Links
 
-- Live demo: `YOUR_DEPLOYED_LINK`
-- GitHub repository: `YOUR_GITHUB_REPO_LINK`
+- Live demo: https://axipays-payment-gateway.vercel.app
+  (update with actual Vercel URL once deployed)
+- GitHub repository: https://github.com/SagarPradhan613/axipays-payment-gateway
 
 ## Tech Stack
 
@@ -71,7 +72,7 @@ The application validates and masks sensitive payment data on the client, genera
 1. Clone the repository:
 
 ```bash
-git clone YOUR_GITHUB_REPO_LINK
+git clone https://github.com/SagarPradhan613/axipays-payment-gateway.git
 cd axipays
 ```
 
@@ -283,16 +284,5 @@ Route-level pages are also lazy loaded with `React.lazy()` and `Suspense`, so ch
 
 ## Screenshots
 
-Place screenshots here:
-
-- `docs/checkout-light.png`
-- `docs/checkout-dark.png`
-- `docs/dashboard-light.png`
-- `docs/dashboard-mobile.png`
-
-Example:
-
-```md
-![Checkout Page](./docs/checkout-light.png)
-![Dashboard](./docs/dashboard-light.png)
-```
+> Screenshots will be added after deployment.
+> Live demo available at the link above.
