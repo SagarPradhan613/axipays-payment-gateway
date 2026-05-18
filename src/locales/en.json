@@ -1,0 +1,250 @@
+{
+  "common": {
+    "app": {
+      "name": "Axipays",
+      "tagline": "Payment checkout and transaction intelligence"
+    },
+    "actions": {
+      "toggleTheme": "Toggle theme",
+      "toggleLanguage": "Toggle language",
+      "openMenu": "Open navigation menu",
+      "closeMenu": "Close navigation menu",
+      "dismiss": "Dismiss"
+    },
+    "navigation": {
+      "checkout": "Checkout",
+      "dashboard": "Dashboard",
+      "notFound": "Page not found"
+    },
+    "labels": {
+      "status": "Status"
+    },
+    "statuses": {
+      "success": "Success",
+      "failed": "Failed",
+      "pending": "Pending"
+    },
+    "states": {
+      "loading": "Loading"
+    },
+    "notFound": {
+      "metaTitle": "Axipays | Not Found",
+      "title": "Page not found",
+      "description": "The page you are looking for does not exist or has moved.",
+      "backToCheckout": "Back to checkout"
+    }
+  },
+  "checkout": {
+    "metaTitle": "Axipays | Payment",
+    "eyebrow": "Secure Payment Checkout",
+    "title": "Complete your payment with confidence",
+    "description": "Enter your card and billing details below. Axipays validates your payment data in real time, protects sensitive fields, and guides you through the redirect flow securely.",
+    "preview": {
+      "cardNumber": "Card Number",
+      "cardHolder": "Card Holder",
+      "expiry": "Expiry",
+      "securityCode": "Security Code",
+      "namePlaceholder": "CARD HOLDER",
+      "cardNumberPlaceholder": "•••••• ****** ••••",
+      "expiryPlaceholder": "MM/YYYY",
+      "cvvPlaceholder": "***",
+      "backNote": "Your CVV remains masked and is only used for secure payment authorization."
+    },
+    "form": {
+      "cardHolderName": {
+        "label": "Card Holder Name",
+        "placeholder": "Enter the name on the card",
+        "hint": "Use the exact name printed on the payment card."
+      },
+      "email": {
+        "label": "Email Address",
+        "placeholder": "you@example.com",
+        "hint": "We use this email to build the secure request signature."
+      },
+      "cardNumber": {
+        "label": "Card Number",
+        "placeholder": "4111 1111 1111 1111",
+        "hint": "Your card number is masked on screen and validated with the Luhn check.",
+        "valid": "Luhn valid",
+        "invalid": "Luhn invalid"
+      },
+      "expiryMonth": {
+        "label": "Expiry Month",
+        "placeholder": "MM"
+      },
+      "expiryYear": {
+        "label": "Expiry Year",
+        "placeholder": "YYYY"
+      },
+      "cvv": {
+        "label": "CVV / CVC",
+        "placeholder": "123",
+        "hint": "This value is never displayed after submission."
+      },
+      "amount": {
+        "label": "Payment Amount",
+        "placeholder": "125.00",
+        "hint": "Use up to 2 decimal places."
+      },
+      "currency": {
+        "label": "Currency"
+      },
+      "country": {
+        "label": "Country",
+        "placeholder": "Select your country",
+        "searchPlaceholder": "Search country",
+        "empty": "No matching countries found."
+      },
+      "address": {
+        "label": "Address",
+        "placeholder": "Street address, city, postal code",
+        "hint": "Billing address information improves payment verification."
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "+14155550123",
+        "hint": "Use international format with country code."
+      }
+    },
+    "errors": {
+      "redirectMissing": "The payment redirect URL was not returned by the server.",
+      "initiationFailed": "Payment initiation failed.",
+      "redirectStatusFailed": "The redirect status could not be fetched."
+    },
+    "validation": {
+      "cardHolderNameMin": "Card holder name must be at least 3 characters.",
+      "emailInvalid": "Enter a valid email address.",
+      "cardNumberRequired": "Card number is required.",
+      "cardNumberInvalid": "Enter a valid card number.",
+      "expiryMonthInvalid": "Expiry month must be between 01 and 12.",
+      "expiryYearInvalid": "Enter a valid 4-digit year.",
+      "expiryYearPast": "Expiry year must be the current year or later.",
+      "cvvInvalid": "CVV must contain 3 or 4 digits.",
+      "amountFormat": "Amount must be a valid number with up to 2 decimals.",
+      "amountPositive": "Amount must be greater than zero.",
+      "countryRequired": "Please select a country.",
+      "addressRequired": "Address must be at least 8 characters.",
+      "phoneInvalid": "Enter a valid international phone number."
+    },
+    "summary": {
+      "amountLabel": "Payment Summary",
+      "amountPlaceholder": "Amount pending",
+      "amountDescription": "The summary updates live as the form changes so users can confirm values before redirecting.",
+      "securityLabel": "Security Notes",
+      "securityOne": "Card data is validated in the browser before the API request is sent.",
+      "securityTwo": "Sensitive values are never logged and CVV remains masked on every screen.",
+      "securityThree": "The checkout store is cleared after a successful payment initiation."
+    },
+    "actions": {
+      "submit": "Initiate Payment",
+      "processing": "Processing payment"
+    },
+    "iframe": {
+      "title": "Redirect Experience",
+      "description": "The payment redirect is shown here in an iframe and also opened in a new browser tab."
+    },
+    "statusPanel": {
+      "title": "Payment Lifecycle",
+      "description": "Track the current submission state and review whether the redirect flow is active.",
+      "currentStatus": "Current status",
+      "awaitingSubmission": "No payment has been initiated yet. Submit the form to generate the secure Axipays redirect flow.",
+      "redirectActive": "The redirect URL is active below. A new browser tab was opened alongside the embedded iframe."
+    },
+    "help": {
+      "title": "What happens next",
+      "lineOne": "After submission, Axipays generates the HMAC hash, sends the initiation request, and opens the redirect URL in parallel surfaces.",
+      "lineTwo": "The payment status modal updates immediately when a status is returned directly or inferred from the redirect lifecycle.",
+      "lineThree": "If the provider sends a pending state first, the checkout keeps monitoring for a later success or failure signal."
+    },
+    "statusModal": {
+      "success": {
+        "title": "Payment successful",
+        "description": "The payment completed successfully and the customer can safely continue."
+      },
+      "failed": {
+        "title": "Payment failed",
+        "description": "The payment could not be completed. Review the response and try again if needed."
+      },
+      "pending": {
+        "title": "Payment pending",
+        "description": "The payment is still being processed. Keep the redirect open while the final status resolves."
+      }
+    },
+    "countries": {
+      "unitedStates": "United States",
+      "india": "India",
+      "unitedKingdom": "United Kingdom",
+      "unitedArabEmirates": "United Arab Emirates",
+      "germany": "Germany"
+    }
+  },
+  "dashboard": {
+    "metaTitle": "Axipays Dashboard",
+    "eyebrow": "Transaction Intelligence",
+    "title": "Monitor payment performance in real time",
+    "description": "Track transaction outcomes, compare currency mix, and inspect detailed payment history with export-ready operational reporting.",
+    "summary": {
+      "totalTransactions": "Total transactions",
+      "successVolume": "Total success volume",
+      "successCount": "Total success count",
+      "failedCount": "Total failed + pending count",
+      "footers": {
+        "totalTransactions": "Transactions recorded",
+        "successVolume": "Successful settlement volume",
+        "successCount": "Completed payments",
+        "failedCount": "Failed and pending"
+      }
+    },
+    "charts": {
+      "statusBreakdown": "Transaction status breakdown",
+      "statusBreakdownDescription": "Live count split across successful, failed, and pending payments.",
+      "totalLabel": "Total",
+      "volumeOverTime": "Volume over time",
+      "volumeOverTimeDescription": "Daily payment volume aggregated from transaction history.",
+      "currencyDistribution": "Currency distribution",
+      "currencyDistributionDescription": "See how traffic is distributed across supported currencies."
+    },
+    "table": {
+      "title": "Transaction history",
+      "description": "Search, sort, paginate, export, and inspect the latest transaction rows.",
+      "copyOrderId": "Copy order ID",
+      "rowsPerPage": "Rows per page",
+      "paginationSummary": "Showing {{start}} to {{end}} of {{total}} filtered transactions",
+      "columns": {
+        "orderId": "Order ID",
+        "email": "Email",
+        "amount": "Amount",
+        "currency": "Currency",
+        "status": "Status",
+        "createdAt": "Date",
+        "cardNumber": "Card Number",
+        "expiry": "Expiry",
+        "cardCvc": "Card CVC"
+      }
+    },
+    "filters": {
+      "searchPlaceholder": "Search by email, order ID, or status",
+      "allStatuses": "All statuses",
+      "pageSize": "{{count}} rows"
+    },
+    "actions": {
+      "retry": "Retry",
+      "exportCsv": "Export CSV",
+      "previous": "Previous",
+      "next": "Next"
+    },
+    "states": {
+      "emptyTitle": "No transactions yet",
+      "emptyDescription": "Transactions will appear here once payment activity is available.",
+      "errorTitle": "Unable to load dashboard"
+    },
+    "toasts": {
+      "copySuccessTitle": "Order ID copied",
+      "copySuccessDescription": "The order ID is now on your clipboard.",
+      "copyErrorTitle": "Copy failed",
+      "copyErrorDescription": "We could not copy the order ID. Please try again.",
+      "exportSuccessTitle": "CSV exported",
+      "exportSuccessDescription": "The filtered transactions were exported successfully."
+    }
+  }
+}

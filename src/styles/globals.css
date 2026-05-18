@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --color-background: 250 250 247;
+  --color-surface: 255 255 255;
+  --color-line: 0 0 0;
+  --color-text-primary: 15 15 15;
+  --color-text-secondary: 107 107 107;
+  --color-line-opacity: 0.08;
+}
+
+.dark {
+  color-scheme: dark;
+  --color-background: 15 15 15;
+  --color-surface: 26 26 26;
+  --color-line: 255 255 255;
+  --color-text-primary: 245 240 232;
+  --color-text-secondary: 158 158 158;
+  --color-line-opacity: 0.08;
+}
+
+@layer base {
+  * {
+    border-color: rgb(var(--color-line) / var(--color-line-opacity));
+  }
+
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-app bg-mesh text-ink font-sans transition-colors duration-300;
+  }
+
+  ::selection {
+    @apply bg-brand-200 text-brand-900;
+  }
+
+  button,
+  input,
+  textarea,
+  select,
+  header,
+  main,
+  div,
+  section,
+  article,
+  aside {
+    transition-property: background-color, border-color, color, box-shadow, transform, opacity;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+  }
+
+  input,
+  select,
+  textarea {
+    min-height: 52px;
+    border-radius: 12px;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus,
+  button:focus-visible {
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.16);
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .ax-focus {
+    @apply focus:border-brand-300 focus:outline-none;
+    box-shadow: none;
+  }
+
+  .ax-focus:focus {
+    box-shadow: 0 0 0 2px rgba(124, 58, 237, 0.16);
+  }
+
+  .ax-field {
+    @apply min-h-[52px] w-full rounded-xl border border-line/60 bg-surface px-4 text-sm text-ink shadow-[0_8px_24px_rgba(15,15,15,0.03)] outline-none placeholder:text-muted;
+  }
+
+  .ax-helper {
+    @apply text-xs leading-5 text-muted;
+  }
+
+  .shimmer {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
+    animation: shimmer 1.4s infinite;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

@@ -1,0 +1,250 @@
+{
+  "common": {
+    "app": {
+      "name": "Axipays",
+      "tagline": "पेमेंट चेकआउट और ट्रांजैक्शन इंटेलिजेंस"
+    },
+    "actions": {
+      "toggleTheme": "थीम बदलें",
+      "toggleLanguage": "भाषा बदलें",
+      "openMenu": "नेविगेशन मेनू खोलें",
+      "closeMenu": "नेविगेशन मेनू बंद करें",
+      "dismiss": "बंद करें"
+    },
+    "navigation": {
+      "checkout": "चेकआउट",
+      "dashboard": "डैशबोर्ड",
+      "notFound": "पेज नहीं मिला"
+    },
+    "labels": {
+      "status": "स्थिति"
+    },
+    "statuses": {
+      "success": "सफल",
+      "failed": "विफल",
+      "pending": "प्रतीक्षारत"
+    },
+    "states": {
+      "loading": "लोड हो रहा है"
+    },
+    "notFound": {
+      "metaTitle": "Axipays | पेज नहीं मिला",
+      "title": "पेज नहीं मिला",
+      "description": "जिस पेज को आप खोज रहे हैं वह मौजूद नहीं है या स्थानांतरित हो चुका है।",
+      "backToCheckout": "चेकआउट पर वापस जाएँ"
+    }
+  },
+  "checkout": {
+    "metaTitle": "Axipays | Payment",
+    "eyebrow": "सिक्योर पेमेंट चेकआउट",
+    "title": "भुगतान आत्मविश्वास के साथ पूरा करें",
+    "description": "नीचे अपने कार्ड और बिलिंग विवरण दर्ज करें। Axipays आपके भुगतान डेटा को रियल टाइम में वैलिडेट करता है, संवेदनशील फ़ील्ड सुरक्षित रखता है और रीडायरेक्ट फ्लो को सुरक्षित रूप से संभालता है।",
+    "preview": {
+      "cardNumber": "कार्ड नंबर",
+      "cardHolder": "कार्ड होल्डर",
+      "expiry": "एक्सपायरी",
+      "securityCode": "सिक्योरिटी कोड",
+      "namePlaceholder": "CARD HOLDER",
+      "cardNumberPlaceholder": "•••••• ****** ••••",
+      "expiryPlaceholder": "MM/YYYY",
+      "cvvPlaceholder": "***",
+      "backNote": "आपका CVV मास्क ही रहता है और केवल सुरक्षित भुगतान प्राधिकरण के लिए उपयोग होता है।"
+    },
+    "form": {
+      "cardHolderName": {
+        "label": "कार्ड होल्डर नाम",
+        "placeholder": "कार्ड पर लिखा नाम दर्ज करें",
+        "hint": "उसी नाम का उपयोग करें जो कार्ड पर छपा है।"
+      },
+      "email": {
+        "label": "ईमेल पता",
+        "placeholder": "you@example.com",
+        "hint": "सिक्योर रिक्वेस्ट सिग्नेचर बनाने के लिए यह ईमेल उपयोग होता है।"
+      },
+      "cardNumber": {
+        "label": "कार्ड नंबर",
+        "placeholder": "4111 1111 1111 1111",
+        "hint": "कार्ड नंबर स्क्रीन पर मास्क रहता है और Luhn चेक से वैलिडेट होता है।",
+        "valid": "Luhn वैध",
+        "invalid": "Luhn अमान्य"
+      },
+      "expiryMonth": {
+        "label": "एक्सपायरी महीना",
+        "placeholder": "MM"
+      },
+      "expiryYear": {
+        "label": "एक्सपायरी वर्ष",
+        "placeholder": "YYYY"
+      },
+      "cvv": {
+        "label": "CVV / CVC",
+        "placeholder": "123",
+        "hint": "सबमिशन के बाद यह मान फिर कभी प्रदर्शित नहीं होता।"
+      },
+      "amount": {
+        "label": "पेमेंट राशि",
+        "placeholder": "125.00",
+        "hint": "अधिकतम 2 दशमलव स्थान उपयोग करें।"
+      },
+      "currency": {
+        "label": "करेंसी"
+      },
+      "country": {
+        "label": "देश",
+        "placeholder": "अपना देश चुनें",
+        "searchPlaceholder": "देश खोजें",
+        "empty": "कोई मेल खाता देश नहीं मिला।"
+      },
+      "address": {
+        "label": "पता",
+        "placeholder": "सड़क पता, शहर, पिन कोड",
+        "hint": "बिलिंग पता भुगतान सत्यापन को बेहतर बनाता है।"
+      },
+      "phone": {
+        "label": "फ़ोन",
+        "placeholder": "+14155550123",
+        "hint": "देश कोड सहित अंतरराष्ट्रीय प्रारूप का उपयोग करें।"
+      }
+    },
+    "errors": {
+      "redirectMissing": "सर्वर ने पेमेंट redirect URL वापस नहीं किया।",
+      "initiationFailed": "पेमेंट इनिशिएशन विफल हुआ।",
+      "redirectStatusFailed": "redirect status प्राप्त नहीं किया जा सका।"
+    },
+    "validation": {
+      "cardHolderNameMin": "कार्ड होल्डर नाम कम से कम 3 अक्षरों का होना चाहिए।",
+      "emailInvalid": "मान्य ईमेल पता दर्ज करें।",
+      "cardNumberRequired": "कार्ड नंबर आवश्यक है।",
+      "cardNumberInvalid": "मान्य कार्ड नंबर दर्ज करें।",
+      "expiryMonthInvalid": "एक्सपायरी महीना 01 और 12 के बीच होना चाहिए।",
+      "expiryYearInvalid": "मान्य 4-अंकीय वर्ष दर्ज करें।",
+      "expiryYearPast": "एक्सपायरी वर्ष वर्तमान वर्ष या उसके बाद का होना चाहिए।",
+      "cvvInvalid": "CVV में 3 या 4 अंक होने चाहिए।",
+      "amountFormat": "राशि अधिकतम 2 दशमलव वाले मान्य नंबर के रूप में दर्ज करें।",
+      "amountPositive": "राशि शून्य से अधिक होनी चाहिए।",
+      "countryRequired": "कृपया एक देश चुनें।",
+      "addressRequired": "पता कम से कम 8 अक्षरों का होना चाहिए।",
+      "phoneInvalid": "मान्य अंतरराष्ट्रीय फ़ोन नंबर दर्ज करें।"
+    },
+    "summary": {
+      "amountLabel": "पेमेंट सारांश",
+      "amountPlaceholder": "राशि लंबित",
+      "amountDescription": "फॉर्म बदलते ही सारांश लाइव अपडेट होता है ताकि उपयोगकर्ता रीडायरेक्ट से पहले मान सत्यापित कर सकें।",
+      "securityLabel": "सुरक्षा नोट्स",
+      "securityOne": "API रिक्वेस्ट भेजने से पहले कार्ड डेटा ब्राउज़र में ही वैलिडेट होता है।",
+      "securityTwo": "संवेदनशील मान कभी लॉग नहीं होते और CVV हर स्क्रीन पर मास्क रहता है।",
+      "securityThree": "सफल पेमेंट इनिशिएशन के बाद checkout store साफ़ कर दिया जाता है।"
+    },
+    "actions": {
+      "submit": "पेमेंट शुरू करें",
+      "processing": "पेमेंट प्रोसेस हो रहा है"
+    },
+    "iframe": {
+      "title": "रीडायरेक्ट अनुभव",
+      "description": "पेमेंट रीडायरेक्ट यहाँ iframe में दिखाया जाता है और साथ ही नए ब्राउज़र टैब में भी खुलता है।"
+    },
+    "statusPanel": {
+      "title": "पेमेंट लाइफसाइकल",
+      "description": "वर्तमान सबमिशन स्थिति ट्रैक करें और देखें कि रीडायरेक्ट फ्लो सक्रिय है या नहीं।",
+      "currentStatus": "वर्तमान स्थिति",
+      "awaitingSubmission": "अभी तक कोई पेमेंट शुरू नहीं किया गया है। सिक्योर Axipays रीडायरेक्ट फ्लो बनाने के लिए फॉर्म सबमिट करें।",
+      "redirectActive": "रीडायरेक्ट URL नीचे सक्रिय है। embedded iframe के साथ नया ब्राउज़र टैब भी खोला गया है।"
+    },
+    "help": {
+      "title": "आगे क्या होगा",
+      "lineOne": "सबमिशन के बाद Axipays HMAC hash बनाता है, initiation request भेजता है और redirect URL को समानांतर surfaces पर खोलता है।",
+      "lineTwo": "यदि status सीधे या redirect lifecycle से मिलता है तो payment status modal तुरंत अपडेट हो जाता है।",
+      "lineThree": "यदि provider पहले pending स्थिति भेजता है, तो checkout बाद के success या failure संकेत का इंतज़ार करता रहता है।"
+    },
+    "statusModal": {
+      "success": {
+        "title": "पेमेंट सफल हुआ",
+        "description": "पेमेंट सफलतापूर्वक पूरा हो गया है और ग्राहक सुरक्षित रूप से आगे बढ़ सकता है।"
+      },
+      "failed": {
+        "title": "पेमेंट विफल हुआ",
+        "description": "पेमेंट पूरा नहीं हो सका। आवश्यक हो तो प्रतिक्रिया की समीक्षा करें और फिर से प्रयास करें।"
+      },
+      "pending": {
+        "title": "पेमेंट लंबित है",
+        "description": "पेमेंट अभी प्रोसेस हो रहा है। अंतिम स्थिति आने तक redirect खुला रखें।"
+      }
+    },
+    "countries": {
+      "unitedStates": "संयुक्त राज्य अमेरिका",
+      "india": "भारत",
+      "unitedKingdom": "यूनाइटेड किंगडम",
+      "unitedArabEmirates": "संयुक्त अरब अमीरात",
+      "germany": "जर्मनी"
+    }
+  },
+  "dashboard": {
+    "metaTitle": "Axipays डैशबोर्ड",
+    "eyebrow": "ट्रांजैक्शन इंटेलिजेंस",
+    "title": "रियल टाइम में पेमेंट परफॉर्मेंस मॉनिटर करें",
+    "description": "ट्रांजैक्शन परिणाम ट्रैक करें, currency mix समझें, और detailed payment history को export-ready reporting के साथ देखें।",
+    "summary": {
+      "totalTransactions": "कुल ट्रांजैक्शन",
+      "successVolume": "कुल सफल वॉल्यूम",
+      "successCount": "कुल सफल गिनती",
+      "failedCount": "कुल failed + pending गिनती",
+      "footers": {
+        "totalTransactions": "रिकॉर्ड किए गए ट्रांजैक्शन",
+        "successVolume": "सफल सेटलमेंट वॉल्यूम",
+        "successCount": "पूर्ण हुए पेमेंट",
+        "failedCount": "विफल और लंबित"
+      }
+    },
+    "charts": {
+      "statusBreakdown": "ट्रांजैक्शन स्टेटस ब्रेकडाउन",
+      "statusBreakdownDescription": "सफल, विफल, और लंबित भुगतान का लाइव काउंट विभाजन।",
+      "totalLabel": "कुल",
+      "volumeOverTime": "समय के साथ वॉल्यूम",
+      "volumeOverTimeDescription": "ट्रांजैक्शन हिस्ट्री से aggregated daily payment volume।",
+      "currencyDistribution": "करेंसी डिस्ट्रीब्यूशन",
+      "currencyDistributionDescription": "समर्थित currencies में ट्रैफिक का वितरण देखें।"
+    },
+    "table": {
+      "title": "ट्रांजैक्शन हिस्ट्री",
+      "description": "नवीनतम transaction rows को search, sort, paginate, export, और inspect करें।",
+      "copyOrderId": "ऑर्डर ID कॉपी करें",
+      "rowsPerPage": "प्रति पेज पंक्तियाँ",
+      "paginationSummary": "{{total}} filtered transactions में से {{start}} से {{end}} दिखाए जा रहे हैं",
+      "columns": {
+        "orderId": "ऑर्डर ID",
+        "email": "ईमेल",
+        "amount": "राशि",
+        "currency": "करेंसी",
+        "status": "स्थिति",
+        "createdAt": "तारीख",
+        "cardNumber": "कार्ड नंबर",
+        "expiry": "एक्सपायरी",
+        "cardCvc": "कार्ड CVC"
+      }
+    },
+    "filters": {
+      "searchPlaceholder": "ईमेल, ऑर्डर ID, या स्थिति से खोजें",
+      "allStatuses": "सभी स्थितियाँ",
+      "pageSize": "{{count}} पंक्तियाँ"
+    },
+    "actions": {
+      "retry": "फिर प्रयास करें",
+      "exportCsv": "CSV एक्सपोर्ट करें",
+      "previous": "पिछला",
+      "next": "अगला"
+    },
+    "states": {
+      "emptyTitle": "अभी कोई ट्रांजैक्शन नहीं है",
+      "emptyDescription": "पेमेंट गतिविधि उपलब्ध होते ही ट्रांजैक्शन यहाँ दिखाई देंगे।",
+      "errorTitle": "डैशबोर्ड लोड नहीं हो सका"
+    },
+    "toasts": {
+      "copySuccessTitle": "ऑर्डर ID कॉपी हो गया",
+      "copySuccessDescription": "ऑर्डर ID अब आपके क्लिपबोर्ड पर है।",
+      "copyErrorTitle": "कॉपी विफल हुई",
+      "copyErrorDescription": "हम ऑर्डर ID कॉपी नहीं कर सके। कृपया फिर से प्रयास करें।",
+      "exportSuccessTitle": "CSV एक्सपोर्ट हो गया",
+      "exportSuccessDescription": "फ़िल्टर किए गए ट्रांजैक्शन सफलतापूर्वक एक्सपोर्ट हो गए।"
+    }
+  }
+}
